@@ -26,9 +26,10 @@
 }
  
 .navbar8-image1 {
-  height: 3rem;
+  width: 220px;   /* aumente aqui */
+  height: auto;
 }
- 
+
 .navbar8-desktop-menu {
   flex: 1;
   display: flex;
