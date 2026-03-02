@@ -123,12 +123,8 @@
 }
  
 .navbar8-top {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--dl-layout-space-threeunits);
-  justify-content: space-between;
-}
+   margin-bottom: var(--dl-layout-space-unit);
+ }
  
 .navbar8-logo {
   height: 3rem;
@@ -647,7 +643,7 @@
 }
  
 .hero17-header78 {
-  gap: var(--dl-layout-space-threeunits);
+  gap: var(--dl-layout-space-unit);
   width: 100%;
   height: auto;
   display: flex;
