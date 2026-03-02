@@ -1,15 +1,16 @@
 .navbar8-wrapper {
-  display: contents;
+  width: 100%;
+  display: block;
 }
  
 .navbar8-container1 {
+  position: sticky;
   top: 0;
   width: 100%;
   display: flex;
-  z-index: 1000;
-  position: sticky;
   justify-content: center;
   background-color: var(--dl-color-theme-neutral-light);
+  z-index: 9999;
 }
  
 .navbar8-navbar-interactive {
@@ -23,7 +24,7 @@
   padding-right: var(--dl-layout-space-threeunits);
   padding-bottom: var(--dl-layout-space-oneandhalfunits);
   justify-content: space-between;
-}
+  min-height: 80px;}
  
 .navbar8-image1 {
   width: 220px;   /* aumente aqui */
@@ -141,7 +142,7 @@
   display: none;
   padding: var(--dl-layout-space-twounits);
   z-index: 100;
-  position: absolute;
+  position: fixed;
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--dl-color-theme-neutral-light);
