@@ -13,16 +13,8 @@
 }
  
 .navbar8-navbar-interactive {
-  width: 100%;
-  display: flex;
-  z-index: 100;
-  max-width: var(--dl-layout-size-maxwidth);
-  align-items: center;
   padding-top: var(--dl-layout-space-oneandhalfunits);
-  padding-left: var(--dl-layout-space-threeunits);
-  padding-right: var(--dl-layout-space-threeunits);
   padding-bottom: var(--dl-layout-space-oneandhalfunits);
-  justify-content: space-between;
 }
  
 .navbar8-image1 {
@@ -31,19 +23,11 @@
 }
 
 .navbar8-desktop-menu {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
+  display: none;
 }
  
 .navbar8-links1 {
-  gap: var(--dl-layout-space-twounits);
-  flex: 1;
-  display: flex;
-  align-items: center;
-  margin-left: var(--dl-layout-space-twounits);
-  flex-direction: row;
-  justify-content: flex-start;
+  display: none;
 }
  
 .navbar8-link11 {
@@ -55,13 +39,7 @@
 }
  
 .navbar8-link4-dropdown-trigger {
-  gap: 4px;
-  cursor: pointer;
-  display: flex;
-  align-self: stretch;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-end;
+  display: none;
 }
  
 .navbar8-icon-container1 {
