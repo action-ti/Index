@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CloudSecure IT</title>
+  <title>Action IT</title>
 
   <style>
 
@@ -21,7 +21,7 @@
     body{
       background:#f6f9fc;
       color:#0f172a;
-      line-height:1.6;
+      line-height:1.5;
     }
 
     .container{
@@ -44,7 +44,7 @@
       display:flex;
       justify-content:space-between;
       align-items:center;
-      height:70px;
+      height:64px;
     }
 
     .logo{
@@ -55,7 +55,7 @@
 
     nav{
       display:flex;
-      gap:18px;
+      gap:16px;
     }
 
     nav a{
@@ -70,7 +70,7 @@
       color:#2563eb;
     }
 
-    /* HERO (SOLUÇÃO CORRETA) */
+    /* HERO (REDUZIDA ~60%) */
     .hero{
       position:relative;
 
@@ -78,40 +78,38 @@
         linear-gradient(120deg, rgba(37,99,235,0.88), rgba(2,6,23,0.80)),
         url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920&auto=format&fit=crop');
 
-      background-size: cover;          /* padrão profissional */
-      background-position: center;     /* centraliza corretamente */
+      background-size: cover;
+      background-position: center;
       background-repeat: no-repeat;
-
       color:white;
     }
 
     .hero-content{
-      min-height:45vh; /* 👈 SOLUÇÃO REAL para “imagem grande demais” */
+      min-height:35vh; /* 👈 REDUÇÃO FORTE (~60%) */
       display:flex;
       align-items:center;
       justify-content:center;
       text-align:center;
-      padding:60px 20px;
+      padding:40px 20px;
     }
 
     .hero-text{
-      max-width:900px;
+      max-width:850px;
     }
 
     .hero h1{
-      font-size:44px;
+      font-size:40px;
       font-weight:800;
       line-height:1.1;
-      margin-bottom:18px;
+      margin-bottom:14px;
     }
 
     .hero p{
-      font-size:18px;
+      font-size:16px;
       opacity:0.92;
-      margin-bottom:28px;
+      margin-bottom:22px;
     }
 
-    /* desktop sem quebra */
     @media(min-width:1024px){
       .hero h1,
       .hero p{
@@ -123,35 +121,36 @@
       display:inline-block;
       background:white;
       color:#2563eb;
-      padding:14px 26px;
+      padding:12px 22px;
       border-radius:10px;
       font-weight:700;
       text-decoration:none;
       transition:0.3s;
-      box-shadow:0 10px 25px rgba(0,0,0,0.15);
+      box-shadow:0 8px 20px rgba(0,0,0,0.12);
     }
 
     .btn:hover{
-      transform:translateY(-3px);
+      transform:translateY(-2px);
     }
 
-    /* SECTIONS */
+    /* SECTIONS (MENOS ALTAS) */
     section{
-      padding:80px 0;
+      padding:50px 0; /* 👈 reduzido */
     }
 
     .section-title{
       text-align:center;
-      margin-bottom:50px;
+      margin-bottom:30px; /* 👈 reduzido */
     }
 
     .section-title h2{
-      font-size:34px;
-      margin-bottom:10px;
+      font-size:30px;
+      margin-bottom:8px;
     }
 
     .section-title p{
       color:#64748b;
+      font-size:14px;
     }
 
     /* SERVICES */
@@ -161,15 +160,15 @@
 
     .cards{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-      gap:22px;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:16px;
     }
 
     .card{
       background:#f8fafc;
       border:1px solid #e2e8f0;
-      padding:26px;
-      border-radius:16px;
+      padding:20px;
+      border-radius:14px;
       transition:0.3s;
       position:relative;
     }
@@ -180,25 +179,25 @@
       top:0;
       left:0;
       width:100%;
-      height:4px;
+      height:3px;
       background:#2563eb;
-      border-radius:16px 16px 0 0;
+      border-radius:14px 14px 0 0;
     }
 
     .card:hover{
-      transform:translateY(-6px);
-      box-shadow:0 12px 30px rgba(0,0,0,0.08);
+      transform:translateY(-4px);
+      box-shadow:0 10px 22px rgba(0,0,0,0.08);
     }
 
     .card h3{
       color:#1d4ed8;
-      margin-bottom:10px;
-      font-size:18px;
+      font-size:17px;
+      margin-bottom:8px;
     }
 
     .card p{
       color:#475569;
-      font-size:14px;
+      font-size:13px;
     }
 
     /* ABOUT */
@@ -208,9 +207,10 @@
     }
 
     .about p{
-      max-width:750px;
+      max-width:700px;
       margin:auto;
       color:#475569;
+      font-size:14px;
     }
 
     /* CONTACT */
@@ -219,19 +219,18 @@
     }
 
     form{
-      max-width:600px;
+      max-width:550px;
       margin:auto;
       display:flex;
       flex-direction:column;
-      gap:14px;
+      gap:12px;
     }
 
     input, textarea{
-      padding:14px;
+      padding:12px;
       border-radius:10px;
       border:1px solid #e2e8f0;
-      font-size:15px;
-      transition:0.3s;
+      font-size:14px;
     }
 
     input:focus, textarea:focus{
@@ -243,7 +242,7 @@
     button{
       background:#2563eb;
       color:white;
-      padding:14px;
+      padding:12px;
       border:none;
       border-radius:10px;
       font-weight:700;
@@ -261,29 +260,24 @@
       background:#0f172a;
       color:#cbd5e1;
       text-align:center;
-      padding:20px;
-      font-size:13px;
+      padding:16px;
+      font-size:12px;
     }
 
     /* MOBILE */
     @media(max-width:768px){
       .hero h1{
-        font-size:32px;
+        font-size:30px;
         white-space:normal;
       }
 
       .hero p{
-        font-size:15px;
+        font-size:14px;
         white-space:normal;
       }
 
-      nav{
-        flex-wrap:wrap;
-        justify-content:center;
-      }
-
-      .hero-content{
-        min-height:50vh;
+      section{
+        padding:40px 0;
       }
     }
 
@@ -294,7 +288,7 @@
 
 <header>
   <div class="container header-content">
-    <div class="logo">CloudSecure IT</div>
+    <div class="logo">Action IT</div>
 
     <nav>
       <a href="#home">Home</a>
@@ -312,7 +306,7 @@
       <h1>Especialistas em Intune, Entra ID e Azure</h1>
 
       <p>
-        Modernizamos ambientes corporativos com segurança, gerenciamento de dispositivos e soluções Microsoft Cloud.
+        Modernizamos ambientes corporativos com segurança e gestão completa Microsoft Cloud.
       </p>
 
       <a href="#contato" class="btn">Solicitar Consultoria</a>
@@ -326,29 +320,29 @@
 
     <div class="section-title">
       <h2>Nossos Serviços</h2>
-      <p>Infraestrutura e segurança Microsoft Cloud</p>
+      <p>Infraestrutura Microsoft Cloud</p>
     </div>
 
     <div class="cards">
 
       <div class="card">
-        <h3>Microsoft Intune</h3>
-        <p>Gestão de dispositivos, compliance e automação corporativa.</p>
+        <h3>Intune</h3>
+        <p>Gestão de dispositivos e compliance corporativo.</p>
       </div>
 
       <div class="card">
-        <h3>Microsoft Entra ID</h3>
-        <p>MFA, SSO e arquitetura Zero Trust moderna.</p>
+        <h3>Entra ID</h3>
+        <p>Identidade, MFA e segurança Zero Trust.</p>
       </div>
 
       <div class="card">
-        <h3>Microsoft Azure</h3>
-        <p>Infraestrutura cloud, backup e monitoramento.</p>
+        <h3>Azure</h3>
+        <p>Infraestrutura cloud e monitoramento.</p>
       </div>
 
       <div class="card">
         <h3>Microsoft 365</h3>
-        <p>Exchange, Teams, SharePoint e governança corporativa.</p>
+        <p>Teams, Exchange e colaboração corporativa.</p>
       </div>
 
     </div>
@@ -371,14 +365,14 @@
   <div class="container">
 
     <div class="section-title">
-      <h2>Entre em Contato</h2>
+      <h2>Contato</h2>
       <p>Solicite uma avaliação do seu ambiente</p>
     </div>
 
     <form>
       <input type="text" placeholder="Seu nome" required>
       <input type="email" placeholder="Seu email" required>
-      <textarea rows="4" placeholder="Sua mensagem"></textarea>
+      <textarea rows="4" placeholder="Mensagem"></textarea>
       <button type="submit">Enviar</button>
     </form>
 
@@ -386,7 +380,7 @@
 </section>
 
 <footer>
-  © 2026 CloudSecure IT — Todos os direitos reservados
+  © 2026 Action IT — Todos os direitos reservados
 </footer>
 
 </body>
