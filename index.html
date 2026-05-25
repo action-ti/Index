@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -11,7 +12,7 @@
       margin:0;
       padding:0;
       box-sizing:border-box;
-      font-family: "Segoe UI", Arial, sans-serif;
+      font-family:"Segoe UI", Arial, sans-serif;
     }
 
     body{
@@ -20,22 +21,21 @@
       line-height:1.6;
     }
 
-    /* HEADER */
-
-    header{
-      width:100%;
-      background:#ffffff;
-      border-bottom:1px solid #e5e5e5;
-      position:sticky;
-      top:0;
-      z-index:1000;
-    }
-
     .container{
       width:100%;
       max-width:1200px;
       margin:auto;
       padding:0 20px;
+    }
+
+    /* HEADER */
+
+    header{
+      background:#ffffff;
+      border-bottom:1px solid #e5e5e5;
+      position:sticky;
+      top:0;
+      z-index:1000;
     }
 
     .header-content{
@@ -71,40 +71,39 @@
 
     .hero{
       background:
-      linear-gradient(rgba(0,24,143,0.82), rgba(0,120,212,0.82)),
+      linear-gradient(rgba(0,24,143,0.80), rgba(0,120,212,0.80)),
       url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920&auto=format&fit=crop');
 
       background-size:cover;
       background-position:center;
-
       color:white;
     }
 
     .hero-content{
-      min-height:75vh;
+      min-height:50vh;
 
       display:flex;
       align-items:center;
       justify-content:center;
       text-align:center;
 
-      padding:60px 20px;
+      padding:40px 20px;
     }
 
     .hero-text{
-      max-width:850px;
+      max-width:800px;
     }
 
     .hero h1{
-      font-size:64px;
-      line-height:1.1;
-      margin-bottom:25px;
+      font-size:48px;
+      line-height:1.2;
+      margin-bottom:20px;
       font-weight:700;
     }
 
     .hero p{
-      font-size:22px;
-      margin-bottom:35px;
+      font-size:18px;
+      margin-bottom:30px;
       opacity:0.95;
     }
 
@@ -113,39 +112,39 @@
       background:white;
       color:#0078D4;
       text-decoration:none;
-      padding:16px 34px;
+      padding:14px 30px;
       border-radius:10px;
-      font-size:18px;
+      font-size:17px;
       font-weight:700;
       transition:0.3s;
     }
 
     .btn:hover{
-      transform:translateY(-2px);
       background:#f0f0f0;
+      transform:translateY(-2px);
     }
 
     /* SERVICES */
 
     .services{
-      padding:90px 0;
+      padding:80px 0;
       background:white;
     }
 
     .section-title{
       text-align:center;
-      margin-bottom:60px;
+      margin-bottom:50px;
     }
 
     .section-title h2{
-      font-size:42px;
+      font-size:38px;
       color:#00188F;
-      margin-bottom:15px;
+      margin-bottom:10px;
     }
 
     .section-title p{
       color:#555;
-      font-size:18px;
+      font-size:17px;
     }
 
     .cards{
@@ -156,15 +155,15 @@
 
     .card{
       background:#f5f7fb;
-      padding:35px;
+      padding:30px;
       border-radius:16px;
-      border:1px solid #e6e6e6;
+      border:1px solid #e5e5e5;
       transition:0.3s;
     }
 
     .card:hover{
       transform:translateY(-5px);
-      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
     }
 
     .card h3{
@@ -175,13 +174,14 @@
 
     .card p{
       color:#555;
+      font-size:15px;
     }
 
     /* ABOUT */
 
     .about{
       background:#eef4fb;
-      padding:90px 0;
+      padding:80px 0;
     }
 
     .about-content{
@@ -191,25 +191,25 @@
     }
 
     .about h2{
-      font-size:42px;
+      font-size:38px;
       color:#00188F;
-      margin-bottom:25px;
+      margin-bottom:20px;
     }
 
     .about p{
-      font-size:19px;
+      font-size:18px;
       color:#444;
     }
 
     /* CONTACT */
 
     .contact{
-      padding:90px 0;
+      padding:80px 0;
       background:white;
     }
 
     form{
-      max-width:700px;
+      max-width:650px;
       margin:auto;
       display:flex;
       flex-direction:column;
@@ -218,7 +218,7 @@
 
     input,
     textarea{
-      padding:16px;
+      padding:15px;
       border:1px solid #d9d9d9;
       border-radius:10px;
       font-size:16px;
@@ -238,9 +238,9 @@
       background:#0078D4;
       color:white;
       border:none;
-      padding:16px;
+      padding:15px;
       border-radius:10px;
-      font-size:18px;
+      font-size:17px;
       font-weight:700;
       cursor:pointer;
       transition:0.3s;
@@ -256,8 +256,8 @@
       background:#00188F;
       color:white;
       text-align:center;
-      padding:30px 20px;
-      font-size:15px;
+      padding:25px 20px;
+      font-size:14px;
     }
 
     /* RESPONSIVO */
@@ -276,17 +276,22 @@
         justify-content:center;
       }
 
+      .hero-content{
+        min-height:45vh;
+        padding:35px 15px;
+      }
+
       .hero h1{
-        font-size:40px;
+        font-size:34px;
       }
 
       .hero p{
-        font-size:18px;
+        font-size:16px;
       }
 
       .section-title h2,
       .about h2{
-        font-size:32px;
+        font-size:30px;
       }
 
     }
@@ -427,9 +432,6 @@
           Somos especialistas em soluções Microsoft focadas
           em modernização de ambientes corporativos,
           segurança digital e produtividade em nuvem.
-          Atuamos com projetos de Intune, Azure,
-          Entra ID e Microsoft 365 para empresas
-          de todos os tamanhos.
         </p>
 
       </div>
@@ -460,7 +462,7 @@
 
         <input type="email" placeholder="Seu Email" required>
 
-        <textarea rows="6" placeholder="Digite sua mensagem"></textarea>
+        <textarea rows="5" placeholder="Digite sua mensagem"></textarea>
 
         <button type="submit">
           Enviar Mensagem
@@ -480,3 +482,4 @@
 
 </body>
 </html>
+```
