@@ -6,6 +6,7 @@
   <title>CloudSecure IT</title>
 
   <style>
+
     *{
       margin:0;
       padding:0;
@@ -26,6 +27,9 @@
       display:flex;
       justify-content:space-between;
       align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
     }
 
     header h1{
@@ -37,56 +41,75 @@
       text-decoration:none;
       margin-left:20px;
       font-weight:bold;
+      transition:0.3s;
     }
 
+    nav a:hover{
+      opacity:0.8;
+    }
+
+    /* HERO */
+
     .hero{
-      background:linear-gradient(to right,#00188F,#0078D4);
+      background:
+        linear-gradient(rgba(0,24,143,0.85), rgba(0,120,212,0.85)),
+        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920&auto=format&fit=crop');
+
+      background-size:cover;
+      background-position:center;
+
       color:white;
-      padding:100px 8%;
+      padding:120px 8%;
       display:flex;
       align-items:center;
-      justify-content:space-between;
-      flex-wrap:wrap;
+      justify-content:center;
+      text-align:center;
+      min-height:80vh;
     }
 
     .hero-text{
-      max-width:550px;
+      max-width:800px;
     }
 
     .hero h2{
-      font-size:52px;
-      margin-bottom:20px;
+      font-size:58px;
+      margin-bottom:25px;
+      line-height:1.2;
     }
 
     .hero p{
-      font-size:20px;
-      margin-bottom:30px;
+      font-size:22px;
+      margin-bottom:35px;
     }
 
     .btn{
       display:inline-block;
-      padding:15px 30px;
+      padding:16px 34px;
       background:white;
       color:#0078D4;
       text-decoration:none;
-      border-radius:8px;
+      border-radius:10px;
       font-weight:bold;
       transition:0.3s;
+      font-size:18px;
     }
 
     .btn:hover{
       background:#e5e5e5;
+      transform:translateY(-2px);
     }
 
+    /* SERVICES */
+
     .services{
-      padding:80px 8%;
+      padding:90px 8%;
       background:white;
     }
 
     .services h3{
       text-align:center;
-      font-size:40px;
-      margin-bottom:50px;
+      font-size:42px;
+      margin-bottom:55px;
       color:#00188F;
     }
 
@@ -98,15 +121,15 @@
 
     .card{
       background:#f4f7fb;
-      padding:30px;
-      border-radius:12px;
+      padding:35px;
+      border-radius:14px;
       transition:0.3s;
       border:1px solid #dce3ec;
     }
 
     .card:hover{
-      transform:translateY(-5px);
-      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+      transform:translateY(-6px);
+      box-shadow:0 12px 25px rgba(0,0,0,0.1);
     }
 
     .card h4{
@@ -115,32 +138,42 @@
       font-size:24px;
     }
 
+    /* ABOUT */
+
     .about{
-      padding:80px 8%;
+      padding:90px 8%;
       background:#eef4fb;
       text-align:center;
     }
 
     .about h3{
-      font-size:38px;
-      margin-bottom:20px;
+      font-size:40px;
+      margin-bottom:25px;
       color:#00188F;
     }
 
+    .about p{
+      max-width:850px;
+      margin:auto;
+      font-size:18px;
+    }
+
+    /* CONTACT */
+
     .contact{
-      padding:80px 8%;
+      padding:90px 8%;
       background:white;
     }
 
     .contact h3{
       text-align:center;
-      margin-bottom:40px;
-      font-size:38px;
+      margin-bottom:45px;
+      font-size:40px;
       color:#00188F;
     }
 
     form{
-      max-width:600px;
+      max-width:650px;
       margin:auto;
       display:flex;
       flex-direction:column;
@@ -148,42 +181,81 @@
     }
 
     input, textarea{
-      padding:15px;
+      padding:16px;
       border:1px solid #ccc;
-      border-radius:8px;
+      border-radius:10px;
       font-size:16px;
     }
 
+    textarea{
+      resize:none;
+    }
+
     button{
-      padding:15px;
+      padding:16px;
       border:none;
       background:#0078D4;
       color:white;
       font-size:18px;
-      border-radius:8px;
+      border-radius:10px;
       cursor:pointer;
+      transition:0.3s;
     }
 
     button:hover{
       background:#005fa3;
     }
 
+    /* FOOTER */
+
     footer{
       background:#00188F;
       color:white;
       text-align:center;
-      padding:25px;
+      padding:28px;
+      font-size:15px;
     }
 
+    /* RESPONSIVO */
+
     @media(max-width:768px){
+
+      header{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
+      nav a{
+        margin:5px 10px;
+      }
+
+      .hero{
+        padding:90px 6%;
+        min-height:70vh;
+      }
+
       .hero h2{
         font-size:38px;
       }
 
-      nav{
-        display:none;
+      .hero p{
+        font-size:18px;
       }
+
+      .services h3,
+      .about h3,
+      .contact h3{
+        font-size:32px;
+      }
+
     }
+
   </style>
 </head>
 
@@ -200,34 +272,47 @@
     </nav>
   </header>
 
+  <!-- HERO -->
+
   <section class="hero">
     <div class="hero-text">
-      <h2>Especialistas em Intune, Entra ID e Azure</h2>
+
+      <h2>
+        Especialistas em Intune, Entra ID e Azure
+      </h2>
 
       <p>
         Modernizamos ambientes corporativos com segurança,
         gerenciamento de dispositivos e soluções Microsoft Cloud.
       </p>
 
-      <a href="#" class="btn">Solicitar Consultoria</a>
+      <a href="#" class="btn">
+        Solicitar Consultoria
+      </a>
+
     </div>
   </section>
 
+  <!-- SERVICES -->
+
   <section class="services">
+
     <h3>Nossos Serviços</h3>
 
     <div class="cards">
 
       <div class="card">
         <h4>Microsoft Intune</h4>
+
         <p>
           Gerenciamento de dispositivos corporativos,
-          políticas de segurança, compliance e deploy automatizado.
+          compliance, políticas de segurança e deploy automatizado.
         </p>
       </div>
 
       <div class="card">
         <h4>Microsoft Entra ID</h4>
+
         <p>
           Implementação de MFA, SSO, Conditional Access
           e arquitetura Zero Trust.
@@ -236,6 +321,7 @@
 
       <div class="card">
         <h4>Microsoft Azure</h4>
+
         <p>
           Migração cloud, infraestrutura Azure,
           backup, disaster recovery e monitoramento.
@@ -244,6 +330,7 @@
 
       <div class="card">
         <h4>Microsoft 365</h4>
+
         <p>
           Administração de Exchange Online,
           Teams, SharePoint e segurança corporativa.
@@ -251,29 +338,47 @@
       </div>
 
     </div>
+
   </section>
 
+  <!-- ABOUT -->
+
   <section class="about">
+
     <h3>Sobre Nós</h3>
 
     <p>
       Somos especialistas em soluções Microsoft para empresas
-      que desejam segurança, produtividade e modernização
-      da infraestrutura de TI.
+      que desejam modernizar sua infraestrutura de TI,
+      aumentar a segurança e melhorar a produtividade
+      utilizando tecnologias cloud modernas.
     </p>
+
   </section>
 
+  <!-- CONTACT -->
+
   <section class="contact">
+
     <h3>Entre em Contato</h3>
 
     <form>
+
       <input type="text" placeholder="Seu Nome" required />
+
       <input type="email" placeholder="Seu Email" required />
+
       <textarea rows="5" placeholder="Digite sua mensagem"></textarea>
 
-      <button type="submit">Enviar</button>
+      <button type="submit">
+        Enviar
+      </button>
+
     </form>
+
   </section>
+
+  <!-- FOOTER -->
 
   <footer>
     © 2026 CloudSecure IT - Todos os direitos reservados
